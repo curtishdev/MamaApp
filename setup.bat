@@ -1,5 +1,5 @@
 @echo off
-title à§•‚ „·‚†≠Æ¢™† ≠„¶≠ÎÂ ‰†©´Æ¢... ^| github.com/curtishdev
+title –ò–¥–µ—Ç —É—Å—Ç–∞–Ω–æ–≤–∫–∞ –Ω—É–∂–Ω—ã—Ö —Ñ–∞–π–ª–æ–≤... ^| github.com/curtishdev
 Set mycmdWidth=75
 Set mycmdHeight=40
 cls
@@ -8,7 +8,7 @@ NET FILE 1>NUL 2>NUL
 if '%errorlevel%' == '0' (
     goto continue
 ) else (
-    echo ì·‚†≠Æ¢™† ® ≠†·‚‡Æ©™† Ø‡®´Æ¶•≠®Ô...
+    echo –£—Å—Ç–∞–Ω–æ–≤–∫–∞ –∏ –Ω–∞—Å—Ç—Ä–æ–π–∫–∞ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏—è...
     timeout /t 1 >nul
     start "" "powershell" -Command "Start-Process '%0' -Verb RunAs"
     exit
@@ -18,15 +18,15 @@ if '%errorlevel%' == '0' (
 setlocal enabledelayedexpansion
 
 set mobilnik_dest=C:\Users\mobilnik.mp3
-set mama_dest=C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\mama.ahk
+set mama_dest=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\mama.ahk
 set autohotkey_exe=C:\Program Files\AutoHotkey\AutoHotkey.exe
 set autohotkey_setup_url=https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/curtishdev/MamaApp/blob/main/AutoHotkey_1.1.36.01_setup.exe
 
 if not exist "%autohotkey_exe%" (
-    echo AutoHotkey ≠• ≠†©§•≠. é‚™‡Î¢†Ó ·‚‡†≠®Ê„ §´Ô ·™†Á®¢†≠®Ô...
+    echo AutoHotkey –Ω–µ –Ω–∞–π–¥–µ–Ω. –û—Ç–∫—Ä—ã–≤–∞—é —Å—Ç—Ä–∞–Ω–∏—Ü—É –¥–ª—è —Å–∫–∞—á–∏–≤–∞–Ω–∏—è...
     start chrome "%autohotkey_setup_url%"
-    echo ì·‚†≠Æ¢®‚• Ø‡®´Æ¶•≠®• ®ß ·™†Á†≠≠Æ£Æ †‡Â®¢† ® ¢Î°•‡®‚• °Î·‚‡„Ó „·‚†≠Æ¢™„, ØÆ·´• Á•£Æ ß†Ø„·‚®‚• „·‚†≠Æ¢È®™†.
-    echo ç†¶¨®‚• [Enter] §´Ô ß†¢•‡Ë•≠®Ô ‡†°Æ‚Î...
+    echo –£—Å—Ç–∞–Ω–æ–≤–∏—Ç–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ –∏–∑ —Å–∫–∞—á–∞–Ω–Ω–æ–≥–æ –∞—Ä—Ö–∏–≤–∞ –∏ –≤—ã–±–µ—Ä–∏—Ç–µ –±—ã—Å—Ç—Ä—É—é —É—Å—Ç–∞–Ω–æ–≤–∫—É, –ø–æ—Å–ª–µ —á–µ–≥–æ –∑–∞–ø—É—Å—Ç–∏—Ç–µ —É—Å—Ç–∞–Ω–æ–≤—â–∏–∫–∞.
+    echo –ù–∞–∂–º–∏—Ç–µ [Enter] –¥–ª—è –∑–∞–≤–µ—Ä—à–µ–Ω–∏—è —Ä–∞–±–æ—Ç—ã...
     pause > nul
     exit
 )
@@ -34,7 +34,7 @@ if not exist "%autohotkey_exe%" (
 powershell -Command "& { Invoke-WebRequest -Uri 'https://github.com/curtishdev/MamaApp/raw/main/mobilnik.mp3' -OutFile '!mobilnik_dest!' }"
 
 if %errorlevel% neq 0 (
-    echo éË®°™†! å„ßÎ™† ≠• ≠†©§•≠†.
+    echo –û—à–∏–±–∫–∞! –ú—É–∑—ã–∫–∞ –Ω–µ –Ω–∞–π–¥–µ–Ω–∞.
     pause
     exit
 )
@@ -42,7 +42,7 @@ if %errorlevel% neq 0 (
 powershell -Command "& { Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/curtishdev/MamaApp/main/mama.ahk' -OutFile '!mama_dest!' }"
 
 if %errorlevel% neq 0 (
-    echo éË®°™†! è‡®´Æ¶•≠®• ≠• ≠†©§•≠Æ.
+    echo –û—à–∏–±–∫–∞! –ü—Ä–∏–ª–æ–∂–µ–Ω–∏–µ –Ω–µ –Ω–∞–π–¥–µ–Ω–æ.
     pause
     exit
 )
